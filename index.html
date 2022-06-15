@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Anchor App</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./css/all.min.css" />
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="navbar_container">
+        <div class="home_div">
+          <ul class="home_list">
+            <li><a href="index.html" class="active">Home</a></li>
+          </ul>
+        </div>
+        <ul class="navbar_list" id="menuList">
+          <li><a href="#">Link1</a></li>
+          <li><a href="#">Link2</a></li>
+          <li><a href="#">Link3</a></li>
+          <li><a href="#">Link4</a></li>
+        </ul>
+      </div>
+      <div class="navbar_bars" id="bars">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </div>
+    <div class="response_navbar">
+      <ul class="response_navbar_list">
+        <li>Link 1</li>
+        <li>Link 2</li>
+        <li>Link 3</li>
+        <li>Link 4</li>
+      </ul>
+    </div>
+    <div class="slider_parent">
+      <div class="slider_container">
+        <h1>Start Page</h1>
+      </div>
+      <div class="container_para">
+        <p>Template by w3.css</p>
+      </div>
+      <div class="container_button">
+        <button>Get Started</button>
+      </div>
+    </div>
+    <div class="detail_main_parent">
+      <div class="detail_container">
+        <div class="container_child1">
+          <div class="child1_heading">
+            <h1>Lorem Ipsum</h1>
+          </div>
+          <div class="child1_para1">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Non
+            laudantium molestiae asperiores accusantium, reprehenderit sunt
+            eligendi quia esse placeat, optio, minima voluptas eveniet. Vero
+            magni sequi officiis eum dignissimos consequatur?
+          </div>
+          <div class="child1_para2">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Non
+            laudantium molestiae asperiores accusantium, reprehenderit sunt
+            eligendi quia esse placeat, optio, minima voluptas eveniet. Vero
+            magni sequi officiis eum dignissimos consequatur?Lorem ipsum dolor
+            sit amet, consectetur adipisicing elit. Ipsa, facere illo placeat ut
+            quaerat nulla fuga architecto distinctio autem laboriosam, deleniti
+            quasi impedit excepturi dolore cupiditate deserunt optio? Quisquam,
+            asperiores!
+          </div>
+        </div>
+        <div class="container_child2">
+          <i class="fa-solid fa-anchor"></i>
+        </div>
+      </div>
+    </div>
+    <div class="detail2_main_parent">
+      <div class="detail2_container">
+        <div class="detail2_child1">
+          <i class="fa-solid fa-mug-saucer"></i>
+        </div>
+        <div class="detail2_child2">
+          <div class="child2_heading">
+            <h1>Lorem Ipsum</h1>
+          </div>
+          <div class="child2_para1">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Non
+            laudantium molestiae asperiores accusantium, reprehenderit sunt
+            eligendi quia esse placeat, optio, minima voluptas eveniet. Vero
+            magni sequi officiis eum dignissimos consequatur?
+          </div>
+          <div class="child2_para2">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Non
+            laudantium molestiae asperiores accusantium, reprehenderit sunt
+            eligendi quia esse placeat, optio, minima voluptas eveniet. Vero
+            magni sequi officiis eum dignissimos consequatur?Lorem ipsum dolor
+            sit amet, consectetur adipisicing elit. Ipsa, facere illo placeat ut
+            quaerat nulla fuga architecto distinctio autem laboriosam, deleniti
+            quasi impedit excepturi dolore cupiditate deserunt optio? Quisquam,
+            asperiores!
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="quote_main_div">
+      <div class="quote_heading_div">
+        <h1>Quote of the day: live life</h1>
+      </div>
+    </div>
+    <div class="footer_main_parent">
+      <div class="footer_icons_div">
+        <i class="fa-brands fa-facebook-square"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-snapchat-square"></i>
+        <i class="fa-brands fa-pinterest-p"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-linkedin-in"></i>
+      </div>
+      <div class="link_div">
+        <span>Powered by <a href="https://www.w3schools.com/">w3.css</a></span>
+      </div>
+    </div>
+    <!-- <script>
+    $("#menuList li").click(function (e) {
+      e.preventDefault(); //Remove this in your main code
+      $("#menuList li").removeClass("active");
+      $(this).addClass("active");
+    });
+  </script> -->
+    <script>
+      const navToggle = document.getElementById("bars");
+      const links = document.querySelector(".response_navbar");
+      console.log(links, navToggle)
+      navToggle.addEventListener("click", function () {
+        if(links.classList.contains("active-nav")){
+          console.log("already active")
+          links.classList.remove("active-nav")
+        }
+        else 
+        links.classList.add("active-nav")
+      });
+    </script>
+  </body>
+</html>
